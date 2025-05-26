@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ben's Website</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Header: Site navigation buttons -->
+    <header>
+        <nav class="nav-menu">
+            <a href="index.html"> Home </a>
+            <a href="about.html"> About Me </a>
+            <a href="projects.html"> Projects </a>
+            <a href="contact.html"> Contact </a>
+        </nav>
+    </header>
+
+    <!-- Hero: Flashiest part of the page, usually at the top. The hero class only contains the text, but beneath it are the waves  -->
+    <div class="hero">
+        <h1 class="hero-title"><b>Contact Me</b></h1>
+    </div>
+    <div class="wave-container">
+        <section class="wave wave1" id="wave1">
+        </section>
+        <section class="wave wave2" id="wave2">
+        </section>
+        <section class="wave wave3" id="wave3">
+        </section>
+        <section class="wave wave4" id="wave4">
+        </section>
+        <section class="wave wave5" id="wave5">
+        </section>
+        <section class="wave wave6" id="wave6">
+        </section>
+    </div>
+
+    <!-- script that implements the waves -->
+    <script src="wave.js"></script>
+
+
+    <!-- Section: Text goes here, the pre-section and section are the shaped containers holding the text, the p is the paragraph where you actually put the text -->
+    <div class="pre-section">
+        <div class="section">
+            <h2 class="section-header">
+                Email
+            </h2>
+            <br />
+            <p>
+                Email me at <a href="mailto:gunderbenjamin@gmail.com">gunderbenjamin@gmail.com</a>
+            </p>
+        </div>
+    </div>
+    <div class="pre-section">
+        <div class="section">
+            <h2 class="section-header">
+                Socials
+            </h2>
+            <br />
+            <p>
+                Links to my various social medias.
+            </p>
+        </div>
+    </div>
+    <div class="pre-section">
+        <div class="section">
+            <h2 class="section-header">
+                Forum/Guestbook
+            </h2>
+            <br />
+            <p>
+                I might create a forum or guestbook where people who visit the site can leave messages that other visiters and myself will see in the future.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer: Back-to-top button and extra info to put on every page -->
+    <footer>
+        <button id="backToTop" title="Back to Top">
+            Back to Top
+        </button>
+
+    </footer>
+
+
+    <!-- Scripts for stuff like back to top button, etc. -->
+    <script>
+        const button = document.getElementById('backToTop');
+
+        /* Hides the page title text after reaching 4th wave */
+        window.addEventListener('scroll', () => {
+            const title = document.querySelector('.hero');
+            const wave4 = document.querySelector('.wave4');
+
+            const wave4Bottom = wave4.getBoundingClientRect().bottom;
+
+            // When wave4 starts to cover the title, hide the title
+            if (wave4Bottom <= window.innerHeight * 0.5) {
+                title.style.opacity = '0';
+            } else {
+                title.style.opacity = '1';
+            }
+        });
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector("header");
+            if (window.scrollY > 0) {
+                header.classList.add("scrolled");
+            }
+            else {
+                header.classList.remove("scrolled");
+            }
+        });
+
+        button.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
