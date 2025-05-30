@@ -81,15 +81,15 @@
     <script>
         const button = document.getElementById('backToTop');
 
-        /* Hides the page title text after reaching 4th wave */
+        /* Hides the page title text after reaching 6th wave */
         window.addEventListener('scroll', () => {
             const title = document.querySelector('.hero');
-            const wave4 = document.querySelector('.wave4');
+            const wave6 = document.querySelector('.wave6');
 
-            const wave4Bottom = wave4.getBoundingClientRect().bottom;
+            const wave6Bottom = wave6.getBoundingClientRect().bottom;
 
-            // When wave4 starts to cover the title, hide the title
-            if (wave4Bottom <= window.innerHeight * 0.5) {
+            // When wave6 starts to cover the title, hide the title
+            if (wave6Bottom <= window.innerHeight * 0.5) {
                 title.style.opacity = '0';
             } else {
                 title.style.opacity = '1';
