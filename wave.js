@@ -12,6 +12,7 @@ function waveGenerator(targetId, color, zIndex) {
     svg.style.left = "0";
     svg.style.zIndex = zIndex;
 
+    //randomly generate the frequency, amplitude, and phase of the wave
     const frequency = Math.random() * 0.005 + 0.01;
     const amplitude = Math.random() * 40 + 40;
     const phase = Math.random() * 0.5;
@@ -36,7 +37,7 @@ function waveGenerator(targetId, color, zIndex) {
     waveContainer.appendChild(svg);
     
 }
-
+// When the document loads, generate the 6 waves and append each wave to its tagged wave container.
 document.addEventListener("DOMContentLoaded", function () {
     waveGenerator("wave1", "#F4E9D4", 1); 
     waveGenerator("wave2", "#B9D4B4", 2);

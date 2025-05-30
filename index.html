@@ -1,179 +1,118 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Ben's Website</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <!-- Header: Site navigation buttons -->
-        <header>
-            <nav class="nav-menu">
-                <a href="index.html"> Home </a>
-                <a href="about.html"> About Me </a>
-                <a href="projects.html"> Projects </a>
-                <a href="contact.html"> Contact </a>
-            </nav>
-        </header>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ben's Website</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Header: Site navigation buttons -->
+    <header>
+        <nav class="nav-menu">
+            <a href="index.html"> Home </a>
+            <a href="about.html"> About Me </a>
+            <a href="projects.html"> Projects </a>
+            <a href="contact.html"> Contact </a>
+        </nav>
+    </header>
 
-        <!-- Hero: Flashiest part of the page, usually at the top. the hero class only contains the text, but beneath it are the waves  -->
-        <div class="hero">
-            <h1 class="hero-title"><b>Ben Gunder</b></h1>
-        </div>
-        <div class="wave-container">
-            <section class="wave wave1" id="wave1">
-            </section>
-            <section class="wave wave2" id="wave2">
-            </section>
-            <section class="wave wave3" id="wave3">
-            </section>
-            <section class="wave wave4" id="wave4">
-            </section>
-            <section class="wave wave5" id="wave5">
-            </section>
-            <section class="wave wave6" id="wave6">
-            </section>
-        </div>
+    <!-- Hero: Flashiest part of the page, usually at the top. the hero class only contains the text, but beneath it are the waves  -->
+    <div class="hero">
+        <h1 class="hero-title"><b>Ben Gunder</b></h1>
+    </div>
+    <div class="wave-container">
+        <section class="wave wave1" id="wave1">
+        </section>
+        <section class="wave wave2" id="wave2">
+        </section>
+        <section class="wave wave3" id="wave3">
+        </section>
+        <section class="wave wave4" id="wave4">
+        </section>
+        <section class="wave wave5" id="wave5">
+        </section>
+        <section class="wave wave6" id="wave6">
+        </section>
+    </div>
 
-        <!-- script that implements the waves -->
-        <script src="wave.js"></script>
+    <!-- script that implements the waves -->
+    <script src="wave.js"></script>
 
 
-        <!-- Header Text: Website titles and section headers, use h1-6. as h gets larger, the text size gets smaller -->
-        <!--h1>Hello There</h1>-->
-        <!-- Paragraph: p designates a paragraph.
-    Use i for italics, b for bold, u for underline
-    br is a line break, hr is a horizontal line-->
-        <div class="pre-section">
-            <div class="section">
-                <h2 class="section-header">
-                    Welcome
-                </h2>
+    <!-- Header Text: Website titles and section headers, use h1-6. as h gets larger, the text size gets smaller -->
+    <!--h1>Hello There</h1>-->
+    <!-- Paragraph: p designates a paragraph.
+Use i for italics, b for bold, u for underline
+br is a line break, hr is a horizontal line-->
+    <div class="pre-section">
+        <div class="section">
+            <h2 class="section-header">
+                Welcome
+            </h2>
+            <br />
+            <p>
+                Welcome to my website! 
+                <br /> <br />
+                Here, you can learn about my various hobbies and interests, projects that I have either completed or am currently working on, and where you can find me online.
+                <br /> <br />
+                This website is still being actively developed. I plan on coming back to it frequently between projects to update the style and add new, fun features that visitors can try out. 
+                This might be something like a guestbook, additional unique and colorful visuals, mini games, and more!
+                <br /> <br /> <br /><br />
+                <p align="center"> Here is a random cat image provided by cataas.com: </p> 
                 <br />
-                <p>
-                    Welcome to my website! 
-                    <br /> <br />
-                    Here, you can learn about my various hobbies and interests, projects that I have either completed or am currently working on, and where you can find me online.
-                    <br /> <br />
-                    This website is currently in development. I plan to finish the currently listed pages, and expand the website by adding new features that visitors can try out. 
-                    This might be something like a guestbook, additional unique and colorful visuals, mini games, and more!
-                    <br /> <br /> <br /><br />
-                    Here is a random cat image provided by cataas.com:
-                    <br />
-                    <img src="https://cataas.com/cat" class="rngcat" />
-                </p>
-            </div>
+                <img src="https://cataas.com/cat" class="rngcat" />
+            </p>
         </div>
-        <!-- Links: hyperlinks to other websites imbedded in the text -->
-        <!--<a href="https://golden25.itch.io/">My Itch Profile</a>-->
-        <!-- Images: require a source link -->
-        <!-- <img src="https://placecats.com/400/350" /> -->
-        <!-- Lists: ul = unordered list, ol = ordered list -->
-        <!-- Tables: you can also use colspan and rowspan in columns and row items respectively to increase
-    the amount of tiles that the item spans -->
-        <!--<table border="2" cellpadding="3" cellspacing="2">
-        <tr>
-            <th>Month</th>
-            <th>Day</th>
-            <th>Year</th>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>4</td>
-            <td>2025</td>
-        </tr>
+    </div>
 
-    </table>-->
-
-        <!-- Footer: Back-to-top button and extra info to put on every page -->
-        <footer>
-            <button id="backToTop" title="Back to Top">
-                Back to Top
-            </button>
-
-        </footer>
+    <!-- Footer: Back-to-top button and extra info to put on every page -->
+    <footer>
+        <button id="backToTop" title="Back to Top">
+            Back to Top
+        </button>
+    </footer>
 
 
-        <!-- Scripts for stuff like back to top button, etc. -->
-        <script>
-            const button = document.getElementById('backToTop');
+    <!-- Scripts for stuff like back to top button, etc. -->
+    <script>
+        const button = document.getElementById('backToTop');
 
-            /* Hides the page title text after reaching 4th wave */
-            window.addEventListener('scroll', () => {
-                const title = document.querySelector('.hero');
-                const wave4 = document.querySelector('.wave4');
+        /* Hides the page title text after reaching 4th wave */
+        window.addEventListener('scroll', () => {
+            const title = document.querySelector('.hero');
+            const wave4 = document.querySelector('.wave4');
 
-                const wave4Bottom = wave4.getBoundingClientRect().bottom;
+            const wave4Bottom = wave4.getBoundingClientRect().bottom;
 
-                // When wave4 starts to cover the title, hide the title
-                if (wave4Bottom <= window.innerHeight * 0.5) {
-                    title.style.opacity = '0';
-                } else {
-                    title.style.opacity = '1';
-                }
+            // When wave4 starts to cover the title, hide the title
+            if (wave4Bottom <= window.innerHeight * 0.5) {
+                title.style.opacity = '0';
+            } else {
+                title.style.opacity = '1';
+            }
+        });
+        /* When the user scrolls down, make the header nav-menu have a black background */
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector("header");
+            if (window.scrollY > 0) {
+                header.classList.add("scrolled");
+            }
+            else {
+                header.classList.remove("scrolled");
+            }
+        });
+        /* back to top button */
+        button.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
             });
+        });
 
-            window.addEventListener("scroll", function () {
-                const header = document.querySelector("header");
-                if (window.scrollY > 0) {
-                    header.classList.add("scrolled");
-                }
-                else {
-                    header.classList.remove("scrolled");
-                }
-            });
+    </script>
 
-            button.addEventListener('click', () => {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            });
-
-        </script>
-        <!--
-    Website To Do List:
-    ---- Content ----
-        Home Page:
-            Buttons to go to other pages (DONE!)
-        About Me:
-            Fun Facts
-            Links to social medias
-        Projects:
-            Flingin Fins
-            This website
-            Minecraft Builds
-            In Development
-        Contact:
-            Email
-            Links to social medias
-
-    ---- Style ----
-        Fonts
-        Images
-        Pleasing Colors
-        Buttons
-            Animated
-        Footer
-            Back to top button
-        Almost everything should react when hovered over:
-            text should become bold and "glow"
-            images tilt
-            buttons react
-
-    ---- Get it Online ---
-        Figure it out
-        Do it once ready
-
-    ---- Tips ----
-        Use PossiblyAxolotl's website as a style guide (but be different duh)
-        html is for content, css file is for style, javascript for scripting(?)
-            do more research!!!
-
-    -->
-
-    </body>
+</body>
 
 </html>

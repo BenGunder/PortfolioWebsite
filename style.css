@@ -153,7 +153,7 @@ header.scrolled {
 }
 
 .section {
-    padding: 120px 30vw;
+    padding: 120px 25vw;
     align-content: center;
     background-color: var(--bg3);
     width: 100%;
@@ -162,22 +162,67 @@ header.scrolled {
 
 .section-header {
     font-size: 64px;
-    text-shadow: 0 4px 10px rgba(0, 0, 0, .8)
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, .5);
 }
 
 p {
     font-size: 18px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, .25)
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, .33);
+    font-weight: bold;
+}
+
+.content-container {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.item-title {
+    font-size: 20px;
 }
 
 /*========== Image Formatting ===========*/
+img {
+    border: 4px solid #F5EEDD;
+    border-radius: 18px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.33);
+    height: 240px;
+    width: 240px;
+    padding: 4px;
+    overflow: hidden;
+}
+
+.image-link {
+    height: 225px;
+    width: 283px;
+    object-fit: cover;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.image-link:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
 .rngcat {
-    height: 200px;
-    width: 200px;
+    height: 240px;
+    width: 240px;
     display: block;
     margin: 0 auto;
 }
 
+.moe-pic {
+    height: 240px;
+    width: 240px;
+    margin: 0 auto;
+}
+
+.moe-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+}
 /*========== Button style and animation ===========*/
 button {
     width: 120px;
@@ -199,6 +244,25 @@ button:active {
     transform: translate(2px, 2px);
     box-shadow: none;
 }
+/*========== Link style and animation ===========*/
+
+a {
+    color: inherit;
+    text-decoration:none;
+}
+
+a:hover {
+    animation: rainbowText 4s linear infinite;
+}
+
+@keyframes rainbowText {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
 
 /*========== Footer style ===========*/
 footer {
@@ -207,6 +271,26 @@ footer {
     background-color: var(--bg1);
     text-align: center;
 }
+
+/*========== Changes for mobile ===========*/
+
+@media (max-width: 760px) {
+    /* make page title smaller and up a bit */
+    .hero-title {
+        font-size: 60px;
+    }
+    .hero {
+        top: 20%;
+    }
+    /* make paragraph text smaller where needed and fix formatting*/
+    .section {
+        padding: 180px 20vw;
+    }
+    .section-header {
+        font-size: 50px;
+    }
+}
+
 
 /* https://colorhunt.co/palette/f5eedd7ae2cf077a7d06202b 
     https://lospec.com/palette-list/seafoam
