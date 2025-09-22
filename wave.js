@@ -3,12 +3,13 @@ function waveGenerator(targetId, color, zIndex) {
     const svgWidth = window.innerWidth + 200;
     const svgHeight = 500;
     const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
     const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
 
     svg.setAttribute("width", svgWidth);
     svg.setAttribute("height", svgHeight);
     svg.style.position = "absolute";
-    svg.style.top = "-200";
+    svg.style.top = "-200px";
     svg.style.left = "0";
     svg.style.zIndex = zIndex;
 
